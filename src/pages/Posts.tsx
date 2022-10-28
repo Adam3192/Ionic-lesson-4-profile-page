@@ -1,13 +1,12 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import ProfileHeader from '../components/ProfileHeader';
-import './Home.css';
 
-const Home: React.FC = () => {
+const Posts: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Home Page</IonTitle>
+          <IonTitle>Posts Page</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
@@ -22,4 +21,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default Posts;

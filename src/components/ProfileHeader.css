@@ -1,0 +1,17 @@
+ion-avatar {
+ width: 100px;
+ height: 100px;
+}
+
+.flex {
+ display: flex;
+}
+
+.padding2 {
+ padding-left: 15px;
+ padding-top: 10px;
+}
+
+.padding {
+ padding-left: 15px;
+}
