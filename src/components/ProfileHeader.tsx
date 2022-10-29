@@ -3,15 +3,22 @@ import {
   IonBackButton,
   IonBreadcrumb,
   IonBreadcrumbs,
+  IonButton,
   IonButtons,
   IonCol,
+  IonContent,
   IonGrid,
   IonHeader,
+  IonIcon,
   IonInput,
   IonItem,
   IonLabel,
   IonMenuButton,
+  IonRouterLink,
   IonRow,
+  IonTabBar,
+  IonTabButton,
+  IonTabs,
   IonThumbnail,
   IonTitle,
   IonToolbar,
@@ -39,39 +46,23 @@ const ProfileHeader: React.FC<ContainerProps> = () => {
           </div>
         </div>
 
-
         <IonGrid>
-          <IonRow>
+          <IonRow className='ion-justify-content-center'>
             <IonItem lines="none" detail={false} routerLink='/profile/bio'>
-               <IonLabel>Bio</IonLabel>
+               <IonLabel color='medium'>Bio</IonLabel>
             </IonItem>
             <IonItem lines="none" detail={false} routerLink='/profile/posts'>
-               <IonLabel>Posts</IonLabel>
+               <IonLabel color='medium'>Posts</IonLabel>
             </IonItem>
             <IonItem lines="none" detail={false} routerLink='/profile/friends'>
-               <IonLabel>Friends</IonLabel>
+               <IonLabel color='medium'>Friends</IonLabel>
             </IonItem>
             <IonItem lines="none" detail={false} routerLink='/profile/photos'>
-               <IonLabel>Photos</IonLabel>
+               <IonLabel color='medium'>Photos</IonLabel>
             </IonItem>
           </IonRow>
         </IonGrid>
 
-
-        {/* <IonBreadcrumbs className="ion-justify-content-center ion-padding-top">
-          <IonBreadcrumb separator={false} href="/profile/bio">
-            Bio
-          </IonBreadcrumb>
-          <IonBreadcrumb separator={false} href="/profile/posts">
-            Posts
-          </IonBreadcrumb>
-          <IonBreadcrumb separator={false} href="/profile/friends">
-            Friends
-          </IonBreadcrumb>
-          <IonBreadcrumb active={false} href="/profile/photos">
-            Photos
-          </IonBreadcrumb>
-        </IonBreadcrumbs> */}
 
       </IonHeader>
     </div>
