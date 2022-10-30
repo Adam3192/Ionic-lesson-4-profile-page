@@ -1,0 +1,9 @@
+.sizeAdjust {
+  width: 150px;
+  height: 150px;
+}
+
+.container2 {
+  display: flex;
+  justify-content: space-evenly;
+}

@@ -25,7 +25,7 @@ import {
 } from '@ionic/react'
 import './ProfileHeader.css'
 
-const picture = require('../Images/pic.png')
+const picture = require('../Images/me.png')
 
 interface ContainerProps {}
 

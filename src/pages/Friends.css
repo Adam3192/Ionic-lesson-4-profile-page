@@ -1,8 +1,22 @@
 .size {
- width: 50px;
- height: 50px;
+ width: 62px;
+ height: 55px;
 }
 
 ion-label {
   font-size: 155px;
+}
+
+.margin {
+  margin-top: 3px;
+}
+
+.container {
+  display: flex;
+  margin: 10px;
+  align-items: center;
+}
+
+.width {
+  width: 100%;
 }
