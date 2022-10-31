@@ -21,23 +21,23 @@ const photo8 = require('../Images/photo8.png')
 const Photos: React.FC = () => {
   return (
     <IonPage>
-      <ProfileHeader />
       <IonContent fullscreen>
+      <ProfileHeader />
         <div className='container2'>
-          <IonImg className="sizeAdjust" src={photo1} alt="image1"></IonImg>
-          <IonImg className="sizeAdjust" src={photo2} alt="image1"></IonImg>
+          <IonImg className="sizeAdjust medium" src={photo1} alt="image1"></IonImg>
+          <IonImg className="sizeAdjust medium" src={photo2} alt="image1"></IonImg>
         </div>
         <div className='container2'>
-          <IonImg className="sizeAdjust" src={photo3} alt="image1"></IonImg>
-          <IonImg className="sizeAdjust" src={photo4} alt="image1"></IonImg>
+          <IonImg className="sizeAdjust medium" src={photo3} alt="image1"></IonImg>
+          <IonImg className="sizeAdjust medium" src={photo4} alt="image1"></IonImg>
         </div>
         <div className='container2'>
-          <IonImg className="sizeAdjust" src={photo5} alt="image1"></IonImg>
-          <IonImg className="sizeAdjust" src={photo6} alt="image1"></IonImg>
+          <IonImg className="sizeAdjust medium" src={photo5} alt="image1"></IonImg>
+          <IonImg className="sizeAdjust medium" src={photo6} alt="image1"></IonImg>
         </div>
         <div className='container2'>
-          <IonImg className="sizeAdjust" src={photo7} alt="image1"></IonImg>
-          <IonImg className="sizeAdjust" src={photo8} alt="image1"></IonImg>
+          <IonImg className="sizeAdjust medium" src={photo7} alt="image1"></IonImg>
+          <IonImg className="sizeAdjust medium" src={photo8} alt="image1"></IonImg>
         </div>
       </IonContent>
     </IonPage>

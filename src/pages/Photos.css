@@ -7,3 +7,17 @@
   display: flex;
   justify-content: space-evenly;
 }
+
+@media only screen and (min-width: 700px) {
+  .medium {
+    width: 300px;
+    height: 300px;
+  }
+ }
+
+@media only screen and (min-width: 1200px) {
+  .medium {
+    width: 400px;
+    height: 400px;
+  }
+ }
