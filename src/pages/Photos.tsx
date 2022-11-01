@@ -8,6 +8,7 @@ import {
 } from '@ionic/react'
 import ProfileHeader from '../components/ProfileHeader'
 import './Photos.css'
+import { useParams } from 'react-router-dom'
 
 const photo1 = require('../Images/photo1.png')
 const photo2 = require('../Images/photo2.png')
@@ -19,6 +20,9 @@ const photo7 = require('../Images/photo7.png')
 const photo8 = require('../Images/photo8.png')
 
 const Photos: React.FC = () => {
+  let params = useParams()
+  console.log(window.location.href);
+  
   return (
     <IonPage>
       <IonContent fullscreen>

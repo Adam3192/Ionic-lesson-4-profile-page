@@ -24,12 +24,19 @@ import {
   IonToolbar,
 } from '@ionic/react'
 import './ProfileHeader.css'
+import { useState, useEffect } from 'react';
 
 const picture = require('../Images/me.png')
 
 interface ContainerProps {}
 
 const ProfileHeader: React.FC<ContainerProps> = () => {
+ let [ border, setBorder ] = useState(true);
+
+ useEffect(() => {
+  setBorder(false)
+}, [])
+
   return (
     <div>
       <IonHeader>
@@ -48,17 +55,17 @@ const ProfileHeader: React.FC<ContainerProps> = () => {
 
         <IonGrid>
           <IonRow className="ion-justify-content-center">
-            <IonItem lines="none" detail={false} routerLink="/profile/bio">
-              <IonLabel color="medium">Bio</IonLabel>
+            <IonItem className={ window.location.href =='http://localhost:8101/profile/bio' ? 'border' : 'noBorder'} lines="none" detail={false} routerLink="/profile/bio">
+              <IonLabel className={ window.location.href =='http://localhost:8101/profile/bio' ? 'blue' : 'grey'} color="medium">Bio</IonLabel>
             </IonItem>
-            <IonItem lines="none" detail={false} routerLink="/profile/posts">
-              <IonLabel color="medium">Posts</IonLabel>
+            <IonItem className={ window.location.href =='http://localhost:8101/profile/posts' ? 'border' : 'noBorder'} lines="none" detail={false} routerLink="/profile/posts">
+              <IonLabel className={ window.location.href =='http://localhost:8101/profile/posts' ? 'blue' : 'grey'} color="medium">Posts</IonLabel>
             </IonItem>
-            <IonItem lines="none" detail={false} routerLink="/profile/friends">
-              <IonLabel color="medium">Friends</IonLabel>
+            <IonItem className={ window.location.href =='http://localhost:8101/profile/friends' ? 'border' : 'noBorder'} lines="none" detail={false} routerLink="/profile/friends">
+              <IonLabel className={ window.location.href =='http://localhost:8101/profile/friends' ? 'blue' : 'grey'} color="medium">Friends</IonLabel>
             </IonItem>
-            <IonItem lines="none" detail={false} routerLink="/profile/photos">
-              <IonLabel color="medium">Photos</IonLabel>
+            <IonItem className={ window.location.href =='http://localhost:8101/profile/photos' ? 'border' : 'noBorder'} lines="none" detail={false} routerLink="/profile/photos">
+              <IonLabel className={ window.location.href =='http://localhost:8101/profile/photos' ? 'blue' : 'grey'} color="medium">Photos</IonLabel>
             </IonItem>
           </IonRow>
         </IonGrid>

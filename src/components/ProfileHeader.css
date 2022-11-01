@@ -16,7 +16,7 @@ ion-avatar {
  padding-left: 15px;
 }
 
-ion-item:focus {
+/* ion-item:focus {
  border-bottom: 2px solid blue;
 }
 
@@ -30,4 +30,20 @@ ion-label:hover {
 
 ion-label:active {
  color: blue !important;
+} */
+
+.border {
+ border-bottom: 2px solid #3880ff;
+}
+
+.noBorder {
+ border: none;
+}
+
+.blue {
+ color: #3880ff !important;
+}
+
+.grey {
+
 }
